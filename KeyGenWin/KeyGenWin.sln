@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyGenWin", "KeyGenWin.csproj", "{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Debug.ActiveCfg = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Debug.Build.0 = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Release.ActiveCfg = Release|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

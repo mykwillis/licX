@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseInstaller", "LicenseInstaller.csproj", "{D8104DE2-3710-45CB-9684-981F49F34990}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Debug.ActiveCfg = Debug|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Debug.Build.0 = Debug|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Release.ActiveCfg = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

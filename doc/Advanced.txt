@@ -1,0 +1,37 @@
+Features
+--------
+
+- Allow use of registry keys for storing license key string.
+- Allow license key strings to have expiration dates burned in.
+	[this is requested by andrew@delve.net].
+	[I promised this to him for the next version].
+- Add documentation for licensing non-component classes like
+  executables.  Add docs for Web Controls.
+- Add more explanation on what component developers need to do to make
+  sure their customers don't have any problems.  i.e., licX.dll needs
+  to be copied with their component assembly.
+
+Bugs
+-----
+1. If a component doesn't have the licXLicensing component embedded in it,
+   or if it is static or otherwise inaccessible through reflection, it
+   will trap during Validate().
+2. If a .LIC file is present, it will be used at runtime even if another
+   license is embedded in the executable.  This is Bad, because the license
+   might be an eval license that is supposed to expire.
+
+Advanced Functionality
+----------------------
+- All of Simple's functionality.
+- Optional license activation.
+- Record licensee's identity (through activation) to remind user.
+- Allow product code to be embedded in license string (so that a single binary
+  product can behave differently depending on the product code).
+- Public key support for strong-signed license key strings.  Allow
+  customer name to be 'burned' into license string.
+
+Custom Solutions with Source Code
+---------------------------------
+- Full source to LicX Advanced.
+- Custom programming to implement exactly the license scheme you want.
+

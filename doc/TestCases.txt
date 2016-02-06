@@ -1,0 +1,45 @@
+Setup
+ - validate that licX assembly is registered in GAC
+ - validate that Program Files folder is populated with readme.txt, user's guide.
+ - validate version numbers of keygen and licx.
+ - Validate Release versions were packaged (not Debug or Internal).
+ - Validate .msi size looks right (<200k)
+
+Redistribution
+ - 1. Windows installer distribution.  Build Setup project for test component.
+      Add licX.msm to it.  Build.  Uninstall licX.  Install test component.
+      - Validate licX in GAC
+      - Validate component loads in VS.NET
+      
+ - 2. Batch file distribution.
+        - build .bat file to copy TestComponent and licX to target machine.
+        - invoke gacutil -i licX.dll
+        - Validate GAC successful
+        - Validate component loads in VS
+        
+Core Functionality
+    - LicenseCheckFailed when no license key present
+    - LicenseCheckFailed when invalid license key present
+    - LicenseCheckFailed when improperly-formatted license key present
+    - LicenseCheckFailed when component expired
+    - LicenseCheckFailed when evaluation expired
+    - Vendor/Product information displayed correctly
+    
+Custom Event Handler
+    - Event handler supresses default LicenseCheckFailed message.
+    - Event handler generated correctly by double-clicking from VS
+    
+Evaluation-mode Detection
+    - Validate that IsEvaluation works at designtime/runtime
+    
+KeyGen
+    - Validate generated keys are valid.
+    - With evaluation licenses, make sure only 2 day evals will be generated.
+
+
+Compatibility
+ - Install application that uses previous version of licX, then run
+   subset of test suite again.
+
+
+Retail license for licX: 01-00-D65D68E9FA02AF35-00000001

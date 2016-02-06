@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VBClassLib", "VBClassLib.vbproj", "{ABC3DC5F-6FC3-4AC5-BFD1-CBE6F4565517}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TestApp", "..\TestApp\TestApp.vbproj", "{D8738287-7BD5-40FD-983F-5CF7CEBB0B70}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{ABC3DC5F-6FC3-4AC5-BFD1-CBE6F4565517}.Debug.ActiveCfg = Debug|.NET
+		{ABC3DC5F-6FC3-4AC5-BFD1-CBE6F4565517}.Debug.Build.0 = Debug|.NET
+		{ABC3DC5F-6FC3-4AC5-BFD1-CBE6F4565517}.Release.ActiveCfg = Release|.NET
+		{ABC3DC5F-6FC3-4AC5-BFD1-CBE6F4565517}.Release.Build.0 = Release|.NET
+		{D8738287-7BD5-40FD-983F-5CF7CEBB0B70}.Debug.ActiveCfg = Debug|.NET
+		{D8738287-7BD5-40FD-983F-5CF7CEBB0B70}.Debug.Build.0 = Debug|.NET
+		{D8738287-7BD5-40FD-983F-5CF7CEBB0B70}.Release.ActiveCfg = Release|.NET
+		{D8738287-7BD5-40FD-983F-5CF7CEBB0B70}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

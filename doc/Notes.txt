@@ -1,0 +1,64 @@
+LicenseProvider
+---------------
+
+When deriving a new class from LicenseProvider, the only virtual
+method you can override is the GetLicense() method.  This is to
+contrast with deriving from LicFileLicenseProvider(), in which
+case the IsKeyValid() method may be overridden.
+
+The easiest way to add your own validation logic to a license
+provider is to derive from LicFileLicenseProvider, and override the
+IsKeyValid() method with the custom validation logic.  
+LicFileLicenseProvider apparently handles the details of storing
+the license information in the resources associated with the
+assembly using the licensed components.  It does this by using
+the SetSavedLicenseKey() method of the LicenseContext object, which
+embeds a license key into a .licenses file that is subsequently
+wrapped up into the final assembly.
+
+
+
+The .LIC File
+-------------
+When you have a reference to another project in a solution, the
+default behavior is for the output of that other project to be
+copied to the obj\Debug directory of your project.  To set up
+licensing, you need to create a <namespace>.<class>.lic file in
+the obj\Debug directory.
+
+[Now, I can get design-time to work if I just leave the .lic file
+ in the component's obj\Debug directory.  Which is a little weird.]
+
+At design time, the LicFileLicenseProvider will pick this license
+up.  
+
+Some piece of code somewhere [most likely in the designer itself,
+when it adds the licensed component to the design surface] then writes 
+license information to the licenses.licx file that is created and made 
+part of the project.
+
+At its simplest, this file can be just:
+    <namespace>.<component>, <assembly>
+But when it is generated in response to having read the license from
+a .LIC file, it looks like this:
+    [...], Version=1.0.933.38095, Culture=neutral, PublicKeyToken=null
+I don't know what the PublicKeyToken field is all about.
+[This is just the qualified assembly name.  There is nothing license-
+specific about this string.]
+
+Visual Studio then supposedly uses the LC.EXE utility to compile the
+licenses.licx file into a *.licenses binary.  This binary is then
+placed in the final assembly.
+
+
+It's not clear what the context.SetSavedLicenseContext() call is really
+needed for.  When deriving from LicFileLicenseProvider, you don't need
+to touch this explicitly - maybe the base class is using it, and that's
+what stores the information in the licx file?  But I don't think so.
+[What does SetSavedLicenseContext() do?]
+
+
+Competitors
+-----------
+http://www.hallogram.com/energysoftlic/ (for native components, $299)
+http://www.hallogram.com/licman/index.html license manager from softsolve, $549, $1099

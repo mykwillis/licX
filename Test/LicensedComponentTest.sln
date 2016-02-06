@@ -1,0 +1,33 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensedComponent", "LicensedComponent\LicensedComponent.csproj", "{6BAC40BA-AA0F-4A36-BEE3-18427AD935DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicensedComponentHost", "LicensedComponentHost\LicensedComponentHost.csproj", "{0C10714F-EEB9-4086-8683-DFC7FF8BA897}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "licX", "..\licX\licX.csproj", "{31BDA79B-7556-4228-AF4F-B40E1436239C}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{6BAC40BA-AA0F-4A36-BEE3-18427AD935DC}.Debug.ActiveCfg = Debug|.NET
+		{6BAC40BA-AA0F-4A36-BEE3-18427AD935DC}.Debug.Build.0 = Debug|.NET
+		{6BAC40BA-AA0F-4A36-BEE3-18427AD935DC}.Release.ActiveCfg = Release|.NET
+		{6BAC40BA-AA0F-4A36-BEE3-18427AD935DC}.Release.Build.0 = Release|.NET
+		{0C10714F-EEB9-4086-8683-DFC7FF8BA897}.Debug.ActiveCfg = Debug|.NET
+		{0C10714F-EEB9-4086-8683-DFC7FF8BA897}.Debug.Build.0 = Debug|.NET
+		{0C10714F-EEB9-4086-8683-DFC7FF8BA897}.Release.ActiveCfg = Release|.NET
+		{0C10714F-EEB9-4086-8683-DFC7FF8BA897}.Release.Build.0 = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Debug.ActiveCfg = Debug|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Debug.Build.0 = Debug|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Release.ActiveCfg = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

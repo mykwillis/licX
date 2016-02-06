@@ -1,0 +1,93 @@
+Q. How can I prevent an unhandled LicenseException from being displayed after the licX License Check Failed message?
+
+A.
+
+The license exception is raised by the .NET runtime
+when a license could not be obtained.  This occurs
+after licX has detected the license failure, and after
+the licX dialog box explaining the error has been
+displayed.
+
+The reason the runtime thinks it's necessary to throw
+an exception from within the constructor is because,
+in the case of components, it may be possible for a
+third party to go ahead and use the licensed component
+even though a license was not available.  By throwing
+an exception in the constructor, the runtime assures
+an instance of the class can't even be created, and
+thus can't be used.
+
+To suppress this exception in your application, you
+can simply wrap your call to LicenseManager.Validate()
+within a try/catch block:
+
+  try
+  {
+    LicenseManager.Validate(this.GetType(), this);
+  }
+  catch (LicenseException e)
+  {
+    // exit silently...
+  }
+
+This will prevent it from appearing as if your
+application has done something 'wrong.'
+
+You can do the same thing from within a component, but
+keep in mind that the only thing preventing someone
+from using your (unlicensed) component is failing the
+contstructor with an exception.  If you are a
+component, and you supress this exception from your
+constructor, you must insure that you have some other
+method implemented internally to prevent your
+component from being used.  For example, you could
+have a bool isLicensed that you check in all important
+methods.
+
+
+-----------------------------------------------------------
+
+
+Q. Where do I put the .LIC file if my component is installed
+   to the Global Assembly Cache (GAC)?
+
+A.
+
+Unfortunately, you cannot set a .LIC file search path.
+ It must be located in the same directory as the
+assembly referenced by a project.
+
+If your component is installed to the GAC, there are
+two ways to make sure the .LIC file is in an
+appropriate location.  First, note that the .LIC file
+is needed only at design-time (that is, when your
+customer is building an application that uses your
+component/DLL).  At runtime, all required licensing
+information is embedded in their executable, so no
+.LIC file is needed.
+
+With that in mind, the two options for making sure the
+.LIC file is available at design-time for your
+customers are:
+
+Option #1: include another copy of your .DLL in the
+traditional "Program Files\{your product name}"
+directory.  Place the .LIC file in this directory, and
+have your customers reference this copy when building
+their project.  (If you add your component to the
+Visual Studio .NET toolbox during your component
+installation, you probably already have a non-GAC copy
+of your assembly installed).
+
+Option #2: Insure that your customers set the
+"CopyLocal" property of your assembly reference in the
+"Reference" node of the Solution Explorer window in
+Visual Studio.  Then, your customer can drop a copy of
+the .LIC file (supplied in your Program Files/...
+directory, for example) into their projects bin\Debug
+and bin\Release directory.
+
+Obviously, Option #1 is easier on your customer, and
+doesn't prevent your component from executing from the
+GAC at runtime.
+

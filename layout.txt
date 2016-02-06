@@ -1,0 +1,18 @@
+Source Layout
+-------------
+
+licX
+
+  licX - licX assembly (licX.dll)
+  KeyGen - registration key generator (KeyGen.exe)  
+  Help - Help files (licX.doc)
+  
+  Setup - Setup project (licX.msi)
+  Redist - Merge module for redistribution (licX.msm)  
+  
+  Test
+    LicensedComponent - a component that uses licX for licensing
+    LicensedComponentRedist - Merge module for redistribution of LicensedComponent
+    LicensedComponentHost - A WinForm application that uses LicensedComponent
+    LicensedComponentHostSetup - Setup project for LicensedComponentHost
+

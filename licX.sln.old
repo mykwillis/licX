@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "licX", "licX\licX.csproj", "{31BDA79B-7556-4228-AF4F-B40E1436239C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyGen", "KeyGen\KeyGen.csproj", "{08989619-FB0E-4E9B-A24D-3DB9E881BBA0}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Redist", "Redist\Redist.vdproj", "{3037349D-F322-4237-9578-E5B30FB9063D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyGenWin", "KeyGenWin\KeyGenWin.csproj", "{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseInstaller", "LicenseInstaller\LicenseInstaller.csproj", "{D8104DE2-3710-45CB-9684-981F49F34990}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SupportRedist", "SupportRedist\SupportRedist.vdproj", "{5108DF34-6CEE-4913-B643-D2FEBB33BB03}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{977677BD-822B-4952-8311-84C6953E746D}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 3
+		SccProjectUniqueName0 = licX\\licX.csproj
+		SccLocalPath0 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection0 = licX\\
+		SccProjectUniqueName1 = KeyGen\\KeyGen.csproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection1 = KeyGen\\
+		SccProjectUniqueName2 = KeyGenWin\\KeyGenWin.csproj
+		SccLocalPath2 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection2 = KeyGenWin\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		ConfigName.0 = Debug
+		ConfigName.1 = Internal
+		ConfigName.2 = Release
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{3037349D-F322-4237-9578-E5B30FB9063D}.0 = {31BDA79B-7556-4228-AF4F-B40E1436239C}
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Debug.ActiveCfg = Debug|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Debug.Build.0 = Debug|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Internal.ActiveCfg = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Internal.Build.0 = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Release.ActiveCfg = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Release.Build.0 = Release|.NET
+		{08989619-FB0E-4E9B-A24D-3DB9E881BBA0}.Debug.ActiveCfg = Debug|.NET
+		{08989619-FB0E-4E9B-A24D-3DB9E881BBA0}.Debug.Build.0 = Debug|.NET
+		{08989619-FB0E-4E9B-A24D-3DB9E881BBA0}.Internal.ActiveCfg = Internal|.NET
+		{08989619-FB0E-4E9B-A24D-3DB9E881BBA0}.Internal.Build.0 = Internal|.NET
+		{08989619-FB0E-4E9B-A24D-3DB9E881BBA0}.Release.ActiveCfg = Release|.NET
+		{08989619-FB0E-4E9B-A24D-3DB9E881BBA0}.Release.Build.0 = Release|.NET
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Debug.ActiveCfg = Debug
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Internal.ActiveCfg = Release
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Release.ActiveCfg = Release
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Release.Build.0 = Release
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Debug.ActiveCfg = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Debug.Build.0 = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Internal.ActiveCfg = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Internal.Build.0 = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Release.ActiveCfg = Release|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Release.Build.0 = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Debug.ActiveCfg = Debug|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Debug.Build.0 = Debug|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Internal.ActiveCfg = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Internal.Build.0 = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Release.ActiveCfg = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Release.Build.0 = Release|.NET
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Debug.ActiveCfg = Debug
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Debug.Build.0 = Debug
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Internal.ActiveCfg = Release
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Internal.Build.0 = Release
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Release.ActiveCfg = Release
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Release.Build.0 = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Debug.ActiveCfg = Debug
+		{977677BD-822B-4952-8311-84C6953E746D}.Debug.Build.0 = Debug
+		{977677BD-822B-4952-8311-84C6953E746D}.Internal.ActiveCfg = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Internal.Build.0 = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Release.ActiveCfg = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Release.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		Item:1 = doc\Advanced.txt
+		Item:2 = doc\LicX.doc
+		Item:3 = doc\licXUsersGuide.doc
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

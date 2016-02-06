@@ -1,0 +1,119 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "licX", "licX\licX.csproj", "{31BDA79B-7556-4228-AF4F-B40E1436239C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Redist", "Redist\Redist.vdproj", "{3037349D-F322-4237-9578-E5B30FB9063D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{31BDA79B-7556-4228-AF4F-B40E1436239C} = {31BDA79B-7556-4228-AF4F-B40E1436239C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyGenWin", "KeyGenWin\KeyGenWin.csproj", "{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LicenseInstaller", "LicenseInstaller\LicenseInstaller.csproj", "{D8104DE2-3710-45CB-9684-981F49F34990}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SupportRedist", "SupportRedist\SupportRedist.vdproj", "{5108DF34-6CEE-4913-B643-D2FEBB33BB03}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{977677BD-822B-4952-8311-84C6953E746D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testAppOct25", "testAppOct25\testAppOct25.csproj", "{0C9BE2E2-175D-4EC8-B297-4A1E51DA2821}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 7
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = .
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		CanCheckoutShared = true
+		SolutionUniqueID = {7A4E9B0A-3D23-45D0-8721-2A9A96E61323}
+		SccProjectUniqueName1 = SupportRedist\\SupportRedist.vdproj
+		SccLocalPath1 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection1 = SupportRedist\\
+		SccProjectUniqueName2 = Redist\\Redist.vdproj
+		SccLocalPath2 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection2 = Redist\\
+		SccProjectUniqueName3 = KeyGenWin\\KeyGenWin.csproj
+		SccLocalPath3 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection3 = KeyGenWin\\
+		SccProjectUniqueName4 = LicenseInstaller\\LicenseInstaller.csproj
+		SccLocalPath4 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection4 = LicenseInstaller\\
+		SccProjectUniqueName5 = licX\\licX.csproj
+		SccLocalPath5 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection5 = licX\\
+		SccProjectUniqueName6 = Setup\\Setup.vdproj
+		SccLocalPath6 = .
+		CanCheckoutShared = true
+		SccProjectFilePathRelativizedFromConnection6 = Setup\\
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Internal = Internal
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Debug.ActiveCfg = Debug|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Debug.Build.0 = Debug|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Internal.ActiveCfg = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Internal.Build.0 = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Release.ActiveCfg = Release|.NET
+		{31BDA79B-7556-4228-AF4F-B40E1436239C}.Release.Build.0 = Release|.NET
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Debug.ActiveCfg = Debug
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Debug.Build.0 = Debug
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Internal.ActiveCfg = Release
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Internal.Build.0 = Release
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Release.ActiveCfg = Release
+		{3037349D-F322-4237-9578-E5B30FB9063D}.Release.Build.0 = Release
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Debug.ActiveCfg = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Debug.Build.0 = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Internal.ActiveCfg = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Internal.Build.0 = Debug|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Release.ActiveCfg = Release|.NET
+		{55D5C9C9-90AB-451C-B535-8E3E5259D8FD}.Release.Build.0 = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Debug.ActiveCfg = Debug|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Debug.Build.0 = Debug|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Internal.ActiveCfg = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Internal.Build.0 = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Release.ActiveCfg = Release|.NET
+		{D8104DE2-3710-45CB-9684-981F49F34990}.Release.Build.0 = Release|.NET
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Debug.ActiveCfg = Debug
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Debug.Build.0 = Debug
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Internal.ActiveCfg = Release
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Internal.Build.0 = Release
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Release.ActiveCfg = Release
+		{5108DF34-6CEE-4913-B643-D2FEBB33BB03}.Release.Build.0 = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Debug.ActiveCfg = Debug
+		{977677BD-822B-4952-8311-84C6953E746D}.Debug.Build.0 = Debug
+		{977677BD-822B-4952-8311-84C6953E746D}.Internal.ActiveCfg = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Internal.Build.0 = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Release.ActiveCfg = Release
+		{977677BD-822B-4952-8311-84C6953E746D}.Release.Build.0 = Release
+		{0C9BE2E2-175D-4EC8-B297-4A1E51DA2821}.Debug.ActiveCfg = Debug|.NET
+		{0C9BE2E2-175D-4EC8-B297-4A1E51DA2821}.Internal.ActiveCfg = Release|.NET
+		{0C9BE2E2-175D-4EC8-B297-4A1E51DA2821}.Release.ActiveCfg = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		doc\Advanced.txt = doc\Advanced.txt
+		doc\LicX.doc = doc\LicX.doc
+		doc\licXUsersGuide.doc = doc\licXUsersGuide.doc
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

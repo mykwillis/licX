@@ -1,0 +1,10 @@
+del bin /q
+rd  bin /q
+del obj\debug\temp /q
+del obj\debug\tempPE /q
+rd  obj\debug\temp /q
+rd  obj\debug\tempPE /q
+del obj\debug /q
+rd  obj\debug /q
+del obj /q
+rd  obj /q
